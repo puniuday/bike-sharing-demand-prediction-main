@@ -44,7 +44,7 @@ def seoulbikedemand_prediction(Temperature, Humidity, Wind_speed, Visibility, So
 
 
 def main():
-    st.title("seoul bike prediction ")
+    st.title(" bike rental demand ")
     html_temp = """
     <div style="background-color:tomato;padding:10px">
     <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
