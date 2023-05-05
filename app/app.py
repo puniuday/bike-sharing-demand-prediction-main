@@ -12,9 +12,11 @@ def main_page():
 
         st.write("## Bike rental Demand Prediction")
 
-      
+        urllib.request.urlretrieve(
+            'https://4.imimg.com/data4/JH/CM/GLADMIN-26955287/3-500x500.jpg',
+            "gfg.png")
 
-        img = Image.open("img.jpeg")
+        img = Image.open("gfg.png")
         st.image(img)
 
         st.write(
