@@ -4,13 +4,13 @@ from eda import eda
 import urllib.request
 from PIL import Image
 def main_page():
-    menu = ["Home", "Data Analysis Section", "Prediction Section", "About"]
+    menu = ["Home", "Prediction Section", "About"]
 
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
 
-        st.write("## Seoul Bike Sharing Demand Prediction")
+        st.write("## Bike rental Demand Prediction")
 
         urllib.request.urlretrieve(
             'http://betterbikeshare.org/wp-content/uploads/2015/06/BikeShareLaunch.227.jpg',
@@ -21,23 +21,19 @@ def main_page():
 
         st.write(
             """
-### - DataScource
-The data that we use in this particular app is provided by almabetter contain the features of Seoul Bike Sharing Demand System.
-- https://drive.google.com/drive/folders/1PhGs30XnVzPtdGC6Zsl1NO5Jk4D-6qvu
+
 ### - App Content
- - This app has four sections
+ - This app has 3 sections
 
  1) Home Page - The page you are currently in
 
- 2) Data Analysis - The page in which you will find all the Data Analysis and Visualization Parts
-  * Descriptive - The page in which you will find more info about data
-  * Plots - The page in which you will find plots of the data
+ 
 
 
- 3) Prediction- The page in which you will be asked to give the information on all the required aspects
+ 2) Prediction- The page in which you will be asked to give the information on all the required aspects
    and we will predict the desired the output
    
- 4) About - This Page is about me
+ 3) About - This Page is about me
        """)
 
     elif choice == "Data Analysis Section":
