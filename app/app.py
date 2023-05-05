@@ -12,11 +12,9 @@ def main_page():
 
         st.write("## Bike rental Demand Prediction")
 
-        urllib.request.urlretrieve(
-            'http://betterbikeshare.org/wp-content/uploads/2015/06/BikeShareLaunch.227.jpg',
-            "gfg.png")
+      
 
-        img = Image.open("gfg.png")
+        img = Image.open("img.jpeg")
         st.image(img)
 
         st.write(

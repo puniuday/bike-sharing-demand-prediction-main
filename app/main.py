@@ -63,7 +63,7 @@ def main():
                   'Hour_11', 'Hour_12', 'Hour_13', 'Hour_14', 'Hour_15', 'Hour_16', 'Hour_17', 'Hour_18', 'Hour_19',
                   'Hour_20', 'Hour_21', 'Hour_22', 'Hour_23','Hour_24']
 
-    Hour = st.selectbox('which season', hours_list)
+    Hour = st.selectbox('which Hour', hours_list)
     if Hour == 'Hour_1':
         Hour_1 = 1
         Hour_2 = 0
@@ -902,7 +902,7 @@ def main():
 
         # for function days
     Functionday_list = ['Yes', 'No']
-    Function = st.selectbox('is it  Functionday?', Functionday_list)
+    Function = st.selectbox('is it  Function day?', Functionday_list)
     if Function == '  Yes':
         Functioning_Day_Yes = 1
     else:
